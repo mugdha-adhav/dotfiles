@@ -133,7 +133,7 @@ bindsym mod1+l exec lock
 # bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Pulse Audio controls
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+# bindsym XF86AudioRaiseVolume exec --no-startup-tid pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 # bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
@@ -219,32 +219,17 @@ assign [class="mpv"] 6 Media
 #for_window [class="Termite"] floating enable, resize set 700 600, move position center
 
 # locking screen
-bindsym $mod+Control+l exec i3lock -t -i $HOME/Pictures/naruto.png
-exec --no-startup-id "xautolock -time 5 -locker 'i3lock -i $HOME/Pictures/naruto.png'"
-
-# Startup compositor
-exec --no-startup-id picom --config $HOME/.config/picom.conf
+# bindsym $mod+Control+l exec i3lock -t -i $HOME/Pictures/naruto.png
+# exec --no-startup-id "xautolock -time 5 -locker 'i3lock -i $HOME/Pictures/naruto.png'"
 
 # Load layout
 # exec --no-startup-id "i3-msg 'workspace home; append_layout $HOME/.config/i3/workspace-1.json'"
 
 # Autostart
-# exec --no-startup-id fcitx
-# exec --no-startup-id compton -cb
-exec --no-startup-id feh -Z --bg-scale --randomize /home/mbtamuli/Pictures/Backgrounds/*
-exec --no-startup-id nm-applet
+exec --no-startup-id feh -Z --bg-fill --randomize --recursive /home/mugdha/pics/wallpapers
 
 # exec --no-startup-id xautolock -time 10 -locker "lock"
-# exec --no-startup-id sudo chmod 666 /sys/class/leds/asus\:\:kbd_backlight/brightness
-#
-# exec --no-startup-id termite
-# exec --no-startup-id chromium
 # exec --no-startup-id visual-studio-code
-# exec --no-startup-id telegram-desktop
-# #exec --no-startup-id evolution
 # exec --no-startup-id sleep 3&&i3-msg "workspace 4 Chat; exec termite -e weechat; workspace 1 Terminal"
 # exec --no-startup-id pcmanfm
-# exec --no-startup-id pcmanfm
 # exec --no-startup-id i3-msg "workspace 6 Media; exec termite -e cmus; workspace 1 Terminal"
-# exec --no-startup-id steam
-# exec --no-startup-id qbittorrent
