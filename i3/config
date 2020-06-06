@@ -227,7 +227,8 @@ assign [class="mpv"] 6 Media
 
 # Autostart
 exec --no-startup-id feh -Z --bg-fill --randomize --recursive /home/mugdha/pics/wallpapers
-
+exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id /usr/bin/i3-battery-popup -N -L 11 -l 6 -t 1m -n -m "🔋 Warning: Low Battery (<10%)" 
 # exec --no-startup-id xautolock -time 10 -locker "lock"
 # exec --no-startup-id visual-studio-code
 # exec --no-startup-id sleep 3&&i3-msg "workspace 4 Chat; exec termite -e weechat; workspace 1 Terminal"
