@@ -19,8 +19,8 @@ new_float pixel 4
 
 # Gapps
 # GAP VARIABLES
-set $inner 20
-set $outer 10
+set $inner 5 
+set $outer 1
 
 # SET GAPS
 gaps inner $inner
