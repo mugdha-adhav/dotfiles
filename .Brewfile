@@ -15,12 +15,12 @@ brew "git-delta"      # Syntax-highlighting pager for git and diff output
 brew "wget"           # Internet file retriever
 brew "stow"           # Organise software neatly under a single directory tree
 # -- Development tools --------------------------------------------------------
-cask "docker"         # Docker Desktop — daemon + CLI
 brew "gh"             # GitHub command-line tool
 brew "jq"             # Lightweight and flexible command-line JSON processor
 
 # -- Casks (macOS GUI apps) ---------------------------------------------------
 if OS.mac?
+  cask "docker"             # Docker Desktop — daemon + CLI
   cask "discord"            # Voice and text chat
   cask "ghostty"            # GPU-accelerated terminal emulator
   cask "zed"                # High-performance code editor

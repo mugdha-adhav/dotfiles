@@ -167,8 +167,8 @@ main() {
     print_success "Dotfiles have been stowed to \$HOME"
     echo ""
     echo "Manual steps remaining:"
-    echo "  - Launch Ghostty, Zed, Rectangle from Applications"
-    echo "    (Ghostty is zero-config, Zed auto-generates config on first launch)"
+    echo "  - SSH key: ssh-keygen -t ed25519, add pub key to GitHub"
+    echo "  - Tailscale: install via DMG from https://tailscale.com/download"
     echo ""
 }
 
