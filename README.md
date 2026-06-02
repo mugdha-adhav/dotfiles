@@ -20,6 +20,14 @@ git add . && git commit && git push
 
 > Only run `stow .` when adding new files. Edits to existing files are live immediately since `~HOME` entries are symlinks.
 
+## macOS settings
+
+Preferences worth setting on a fresh machine:
+
+- **Dock** — auto-hide on, remove recent apps, minimize windows into app icon, icon size 44px
+- **Trackpad** — enable tap to click
+- **Appearance** — set to Auto (switches dark/light with system)
+
 ## Manual installs
 
 - **SSH key** — generate and add to GitHub for git over SSH and commit signing
