@@ -2,5 +2,8 @@
 \.gitignore
 \.stow-local-ignore
 \.stowrc
+\.claude
+\.commandcode
 install.sh
 README.md
+AGENTS.md
